@@ -1,4 +1,5 @@
 // Require Libraries
+
 const express = require('express');
 
 const Tenor = require("tenorjs").client({
@@ -8,8 +9,11 @@ const Tenor = require("tenorjs").client({
     "Locale": "en_US", // Your locale here, case-sensitivity depends on input
 });
 
+
+
 // App Setup
 const app = express();
+app.use(express.static('public'));
 
 // Middleware
 
